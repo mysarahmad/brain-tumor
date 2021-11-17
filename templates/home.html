@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<body>
+    
+    
+<section>
+    <div class="text-box">
+        <h1>Welcome to Brain Tumor Checker</h1>
+        <p>Here you can check the Brain tumor of the Patient!</p>
+        <form action="brain_tumor_pred" method="POST" enctype="multipart/form-data" class="choose">
+
+            <input required type="file" name="img" />
+            <br><br><br>
+            <!-- <input type="submit" name="btn" class="dl_submit"> -->
+            <!-- <button type="submit" name="btn">submit</button> -->
+            <center>
+                <button type="submit" class="hero-btn" value="submit" name="btn"
+                    id="sbbtn">Submit</button>
+            </center>
+        </form>
+    </div>
+
+    
+       
+
+   
+</section>
+</body>
+{% endblock %}
